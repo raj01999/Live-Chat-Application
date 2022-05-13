@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script
+      defer
+      src="https://nodeserver-chat-app.herokuapp.com/socket.io/socket.io.js"
+    ></script>
+    <script defer src="./js/index.js"></script>
+    <title>Raj Chat</title>
+  </head>
+  <body>
+    <div class="container">
+      <aside class="left-side-aside">
+        <h2>Online...</h2>
+        <ul id="user-online"></ul>
+      </aside>
+      <section class="main-chat-section">
+        <div class="head">
+          <img src="./assets/logo.png" alt="logo" class="logo" />
+          <h1>~ Your message ~</h1>
+          <img src="./assets/logo.png" alt="logo" class="logo" />
+        </div>
+
+        <div class="msg-container" id="msg-container"></div>
+
+        <form class="msg-send" id="msg-send" autocomplete="off">
+          <input
+            type="text"
+            id="msg-input"
+            placeholder="Type your message here"
+            autocomplete="off"
+          />
+          <button type="submit" id="msg-submit">Send</button>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
