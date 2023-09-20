@@ -1,4 +1,4 @@
-const socket = io("https://nodeserver-chat-app.herokuapp.com/");
+const socket = io("https://live-chat-server-821q.onrender.com");
 const form = document.getElementById("msg-send");
 const input = document.getElementById("msg-input");
 const btn = document.getElementById("msg-submit");
